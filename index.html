@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Alexander ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    min-height:100vh;
+    font-family:Arial,sans-serif;
+    background:
+      linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.45)),
+      url("fondo-hot-wheels.png") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+.contenido{width:92%;max-width:900px}
+h1{
+    font-size:clamp(34px,6vw,60px);
+    margin-bottom:35px;
+    text-shadow:3px 3px 10px #000;
+}
+.boton{
+    background:#e50914;
+    color:white;
+    border:0;
+    padding:16px 30px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 6px 20px rgba(0,0,0,.6);
+    transition:.25s;
+}
+.boton:hover{transform:scale(1.07);background:#ff2530}
+
+.mensaje{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.72);
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+.mensaje-caja{
+    background:white;
+    color:#222;
+    width:min(520px,92vw);
+    padding:30px;
+    border-radius:22px;
+    box-shadow:0 0 35px rgba(0,0,0,.8);
+}
+.mensaje-caja h2{color:#e50914;margin-bottom:20px}
+.mensaje-caja p{font-size:18px;line-height:1.6}
+.cerrar{
+    margin-top:25px;
+    background:#222;
+    color:white;
+    border:0;
+    padding:10px 22px;
+    border-radius:20px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="contenido">
+    <h1>🏁 Para Alexander💕 🏁</h1>
+    <button class="boton" onclick="abrirMensaje()">💌 Abrir mi mensaje</button>
+</div>
+
+<div class="mensaje" id="mensaje">
+    <div class="mensaje-caja">
+        <h2>❤️ Para ti</h2>
+        <p>
+            Para alguien que ama, la velocidad
+            y los tráilers... 🏎️💨
+            <br><br>
+            Quise hacerte este pequeño detalle inspirado
+            en algo que te gusta. Espero que te saque una
+            sonrisa y que te guste tanto como a mí me gustó
+            hacerlo para ti TE QUIERO MI NIÑO. ❤️
+        </p>
+        <button class="cerrar" onclick="cerrarMensaje()">Cerrar 💗</button>
+    </div>
+</div>
+
+<script>
+function abrirMensaje(){
+    document.getElementById("mensaje").style.display="flex";
+}
+function cerrarMensaje(){
+    document.getElementById("mensaje").style.display="none";
+}
+</script>
+
+</body>
+</html>
