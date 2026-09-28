@@ -1,0 +1,6 @@
+ESTA ES LA VERSION CORREGIDA
+
+El fondo NO tiene texto ni mensajes.
+El texto solo aparece en el titulo, boton y ventana del mensaje.
+
+Abre index.html con Live Server en Visual Studio Code.
